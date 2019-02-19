@@ -1,3 +1,19 @@
+The intent of this project is to check the performance of reselect running in smartphones.
+
+# How to run
+
+Compile with production optimizations:
+
+`npm run build`
+
+Start a nxinx web server:
+
+`docker run --name docker-nginx -p 80:80 -d -v $(pwd)/build:/usr/share/nginx/html nginx`
+
+Get the webpage from your smartphone connected to the same localnetwork than the server:
+
+`http://{IP_SERVER}/index.html`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
